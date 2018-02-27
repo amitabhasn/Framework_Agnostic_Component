@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>React Custom Tool-Tip (Framework Agnostic) Components Demo</title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+	<script src="../PopUpInfo.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      ReactDOM.render(
+        <React.Fragment>
+			<h1>Custom Framework Demo (In React.js)</h1>
+			<div>
+				<label> Enter your CVC <
+					popup-info img="../img/default.png" text="Your CVC Code is the last 3 or 4 numbers on the back of your card."></popup-info>
+				</label>
+				<input type="text" id="cvc"></input>
+			</div>
+			<p>This Demo illustrates a simple, custom, framework agnostic component which can be used across frameworks.Please hover over the image to see the custom component.</p>
+		</React.Fragment>,
+        document.getElementById('root')
+      );
+    </script>
+  </body>
+</html>
